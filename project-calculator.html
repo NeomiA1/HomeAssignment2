@@ -3,11 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Quote Calculator</title>
+  <title>Project Calculator</title>
+
+  <link rel="stylesheet" href="assets/style/project-calculator.css" />
+  <script defer src="services/global.js"></script>
+
+  <script defer src="services/calculator.js"></script>
 </head>
+
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header class="main-header">
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project-calculator">Project Calculator</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main class="calculator-form">
+  <h1>Project cost calculator</h1>
+  
+  <form id="calculator-form">
+  <label for="projectName">Project name:</label>
+  <input type="text" id="projectName" name="projectName" required/>
+
+  <label for="itemCount">Number of items:</label>
+  <input type="number" id="itemCount" name="itemCount" required/>
+
+  <label for="pricePerItem">Price per item (₪):</label>
+  <input type="number" id="pricePerItem" name="pricePerItem" required/>
+
+  <button type="submit" class="btn">Calculate</button>
+  </form>
+
+  <div id="result" class="result-box">
+  </div>
+</main>
+
+<footer class="main-footer">
+  <p>&copy; 2025 Neomi Anikin. All rights reserved.</p>
+</footer>
 </body>
 </html>
+
+    
