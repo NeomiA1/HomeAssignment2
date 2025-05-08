@@ -4,3 +4,19 @@
     flex-direction: column;
     align-items: center;
   }
+
+  body {
+    background-color: #e6e6e6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .page-content {
+    max-width: 800px;
+    margin: 2rem auto; 
+    padding: 2rem;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }

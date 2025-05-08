@@ -8,9 +8,33 @@
 
 .nav-links {
     display: flex;
+    justify-content: center;
     list-style: none;
     gap: 1rem;
+    padding: 0;
+    margin: 0;
 }
+
+.nav-links li a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #444;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+.nav-links li a.active {
+    background-color: #007bff;
+    font-weight: bold;
+}
+
+
 
 @media (max-width: 768px) {
     .menu-toggle {
@@ -44,3 +68,9 @@
     align-items: center;
     text-align: center;
   }
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+
