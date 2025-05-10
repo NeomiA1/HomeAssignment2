@@ -1,13 +1,3 @@
-  .page-content {
-    max-width: 800px;
-    margin: 2rem auto; 
-    padding: 2rem;
-    background-color:#3E3F5B; 
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-
   .skills-list {
     list-style-type: disc;
     padding-left: 1.5rem;
@@ -36,4 +26,6 @@
     font-size: 1rem;
     line-height: 1.6;
     margin-top: 1rem;
+    text-align: left;
   }
+

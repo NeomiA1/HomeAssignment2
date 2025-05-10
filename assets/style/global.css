@@ -60,17 +60,24 @@
 }
 
 .navbar {
-    background-color: #f2f2f2;
+    background-color: #F6F1DE;
     padding: 1rem;
 }
 
 .main-footer {
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: #F6F1DE;
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: #3E3F5B;
+  }
+
+  body {
+    background-color: #F6F1DE;
+    margin: 0;
+    font-family: Arial, sans-serif;
   }
 

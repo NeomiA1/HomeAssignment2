@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("calculator-form");
     const resultDiv = document.getElementById("result");
+    const clearBtn = document.getElementById("clear-btn");
+
+    form.reset();
 
     form.addEventListener("submit", (event) => {
         event.preventDefault();
@@ -22,4 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
         "<p><strong>Total price:</strong> ₪" + totalPrice.toFixed(2) + "</p>";
         resultDiv.style.color = "green";
     });
-});
+
+    if (clearBtn) {
+           clearBtn.addEventListener("click", () => {
+            form.reset(); 
+            resultDiv.innerHTML = "";
+            
+            });
+        }
+
+    });

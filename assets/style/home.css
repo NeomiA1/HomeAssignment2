@@ -14,7 +14,7 @@
   .hero-content h2 {
     font-size: 1.2rem;
     color: white;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .hero-content .btn {
@@ -32,16 +32,6 @@
     background-color: #8AB2A6;
   }
 
- .page-content {
-    max-width: 800px;
-    margin: 2rem auto; 
-    padding: 2rem;
-    background-color:#3E3F5B; 
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-
   .profile-img {
     max-width: 180px;
     border-radius: 30%;
@@ -49,3 +39,19 @@
     margin: 0 auto;
     box-shadow: 0 0 8px rgba(83, 81, 81, 0.1);
   }
+
+  .page-content {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #3E3F5B;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+  }
+
+  body {
+    background-color: #F6F1DE;
+  }
+ 
