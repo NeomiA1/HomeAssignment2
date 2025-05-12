@@ -5,13 +5,17 @@
     align-items: center;
   }
 
-  .page-content {
+  .about-section {
     max-width: 500px;
     margin: 2rem auto;
     padding: 2rem;
     background-color: #3E3F5B;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    box-shadow: 0 0 20px  rgba(41, 26, 77, 0.4);
+    text-align: left;
     color: white;
+  }
+
+  .section-text {
+    flex: 1;
   }
