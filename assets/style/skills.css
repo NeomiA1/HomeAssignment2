@@ -1,7 +1,7 @@
   .skills-list {
     list-style-type: disc;
     padding-left: 1.5rem;
-    color: white;
+    color: var(--text-color);
     text-align: left;
   }
 
@@ -11,7 +11,7 @@
   }
 
   .skills-section h1 {
-    color: white;
+    color: var(--text-color);
     margin-bottom: 1rem;
   }
 
@@ -19,21 +19,21 @@
     max-width: 500px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #3E3F5B;
+    background-color: var(--content-bg);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
-    color: white;
+    color: var(--text-color);
   }
 
   .page-content section h2 {
-    color: white;
+    color: var(--text-color);
     margin-top: 2rem;
     font-size: 1.5rem;
   }
 
   .page-content section p {
-    color: white;
+    color: var(--text-color);
     font-size: 1rem;
     line-height: 1.6;
     margin-top: 1rem;

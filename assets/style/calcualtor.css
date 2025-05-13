@@ -3,7 +3,7 @@
     max-width: 500px;
     margin: 2rem auto; 
     padding: 2rem;
-    background-color:#3E3F5B; 
+    background-color: var(--content-bg);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -13,7 +13,8 @@
   }
 
 .page-content h1 {
-    color: white;
+    color: var(--text-color);
+    margin-bottom: 30px;
     margin-bottom: 1.5rem;
 }
 
@@ -29,28 +30,29 @@
   .form-group {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    gap: 7px;
   }
 
-  label {
-    color: white;
-    margin-bottom: 0.3rem;
+  .form-group label {
+    color: var(--text-color);
+    margin-bottom: 5px;
     font-weight: bold;
     text-align: left;
   }
 
-  input {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
+  .form-group input {
+    padding: 10px;
+    border: 1px solid var(--input-border);
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 14px;
+    color: var(--input-text-color);
   }
 
   .btn {
-    background-color: #8AB2A6;
-    color: #333;
-    padding: 0.6rem 1.2rem;
+    background-color: var(--btn-bg);
+    color: var(--btn-text-color);
+    padding: 12px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -59,21 +61,28 @@
   }
 
   .btn:hover {
-    background-color: #749c91;
-  }
+    background-color: var(--btn-hover);
+}
 
-  .result-box, #result {
-   background-color: #f1f1f1;
+  .result-box {
+   background-color: var(--input-bg);
    border: 1px solid #ccc;
-   padding: 1rem;
-   margin-top: 1.5rem;
-   border-radius: 8px;
+   padding: 1.25rem;
+   margin-top: 1.85rem;
+   border-radius: 0.5rem;
    font-size: 1rem;
-   color: #333;
+   color: var(--text-color);
    max-width: 400px;
    line-height: 1.6;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-   margin-left: auto;
-   margin-right: auto;
   }
+
+  .hidden {
+    display: none;
+  }
+
+.form-group input,
+.btn,
+.result-box {
+  width: 100%;
+}
 

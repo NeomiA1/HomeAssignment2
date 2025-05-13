@@ -1,4 +1,38 @@
 /* variables.css */
 :root {
-  --primary-color: #ffffff;
+  --bg-color: #F8F3D9;
+  --text-color: #F8F3D9;
+  --content-bg: #3E3F5B;
+  --btn-bg: #ACD3A8;
+  --btn-hover: #749c91;
+  --btn-text-color:#3E3F5B;
+  --input-bg: #ffffff;
+  --input-border: #ccc;
+  --input-text-color: #3E3F5B;
+  --navbar-bg: #F6F1DE;
+
+  --link-bg: #ACD3A8;
+  --link-color: #3E3F5B;
+  --link-hover-bg: #8ab2a6b2;
+  --active-link-bg: #8ab2a6b2;
+  --footer-bg: #F6F1DE;
+  --footer-text-color: #3E3F5B;
 }
+
+body.dark-mode {
+  --bg-color: #35374B;
+  --text-color: #ffffff;
+  --content-bg: #344955;
+  --btn-bg: #78A083;
+  --btn-hover: #a3c8bb;
+  --input-bg: #444;
+  --input-border: #666;
+  --link-hover-bg: #797777;
+  --link-bg: #78A083;
+  --link-color: #f1f1f1;
+  --navbar-bg: #3E3F5B;
+  --footer-bg: #3E3F5B;
+}
+
+
+

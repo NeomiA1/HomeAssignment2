@@ -9,12 +9,12 @@
 }
 
 .cta-box {
-  background-color: #3E3F5B;
+  background-color: var(--content-bg);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 20px  rgba(41, 26, 77, 0.4);
   text-align: center;
-  color: white;
+  color: var(--text-color);
   min-height: 300px;
   display: flex;
   flex-direction: column;
@@ -39,8 +39,8 @@
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background-color: #8ab2a6;
-  color: white;
+  background-color: var(--btn-bg);
+  color: var(--btn-text-color);
   border: none;
   border-radius: 6px;
   text-decoration: none;
@@ -55,8 +55,8 @@
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background-color: #8ab2a6;
-  color: white;
+  background-color: var(--btn-bg);
+  color: var(--btn-text-color);
   border: none;
   border-radius: 6px;
   text-decoration: none;
@@ -68,12 +68,12 @@
 }
 
 .contact-box a {
-  color: #F6F1DE;
+  color: var(--text-color);
   text-decoration: none;
 }
 
 .contact-box a:hover {
-  color:#8AB2A6;
+  color: var(--btn-bg);
 }
 
 
@@ -81,26 +81,69 @@
   max-width: 1200px;
   margin: 1.2rem auto;
   padding: 1rem;
-  color: white;
+  color: var(--text-color);
   display: flex;
   justify-content: center;
 }
 
 body {
-  background-color: #F6F1DE;
+  background-color: var(--bg-color);
 }
 
+
 @media (max-width: 768px) {
-  .cta-wrapper {
-    grid-template-columns: 1fr;
+  .page-content {
+    padding: 1rem;
+    margin: 1rem;
   }
 
-  .cta-box {
+  .cta-wrapper,
+  .form-group,
+  .skills-section,
+  .about-section {
+    width: 100%;
     max-width: 90%;
     margin: 0 auto;
   }
 
-  .profile-box img.profile-img {
-    max-width: 120px;
+  .cta-box,
+  .result-box {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  .btn,
+  .btn-project,
+  .btn-resume {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .profile-img,
+  .project-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .nav-links {
+    width: 90%;
+    right: 5%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }

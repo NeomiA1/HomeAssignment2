@@ -1,16 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("calculator-form");
-    const resultDiv = document.getElementById("result");
-    const clearBtn = document.getElementById("clear-btn");
-
-    form.reset();
-
-    form.addEventListener("submit", (event) => {
+        function calculatePrice(event) {
         event.preventDefault();
 
+        const projectName = document.getElementById("projectName").value;
         const itemCount = Number(document.getElementById("itemCount").value);
         const pricePerItem = Number(document.getElementById("pricePerItem").value);
-        const projectName = document.getElementById("projectName").value;
+        const resultDiv = document.getElementById("result");
 
         if (itemCount <= 0 || pricePerItem <= 0 || projectName.trim() === "") {
             resultDiv.textContent = "Please enter valid project details.";
@@ -18,20 +12,24 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        const totalPrice = itemCount * pricePerItem
+        const totalPrice = itemCount * pricePerItem;
 
-        resultDiv.innerHTML = 
-        "<p><strong>Project:</strong>" + projectName + "</p>" +
-        "<p><strong>Total price:</strong> ₪" + totalPrice.toFixed(2) + "</p>";
-        resultDiv.style.color = "green";
-    });
+        resultDiv.innerHTML =
+        `<p><strong>Project:</strong> ${projectName}</p>
+         <p><strong>Number of items:</strong> ${itemCount}</p>
+         <p><strong>Price per item:</strong> ₪${pricePerItem.toFixed(2)}</p>
+         <p><strong>Total price:</strong> ₪${totalPrice.toFixed(2)}</p>`;
+      resultDiv.style.color = "black";
+      resultDiv.classList.remove("hidden");
+    
+      document.getElementById("calculator-form").reset();
 
-    if (clearBtn) {
-           clearBtn.addEventListener("click", () => {
-            form.reset(); 
-            resultDiv.innerHTML = "";
-            
-            });
-        }
+}
 
-    });
+function clearForm() {
+    document.getElementById("calculator-form").reset();
+    const resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = "";
+    resultDiv.classList.add("hidden");
+}
+  
