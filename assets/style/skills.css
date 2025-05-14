@@ -40,3 +40,24 @@
     text-align: left;
   }
 
+  @media (max-width: 768px) {
+    .skills-section,
+    .page-content {
+      width: 90%;
+      margin: 1rem auto;
+      padding: 1rem;
+    }
+  
+    .skills-list li {
+      font-size: 0.95rem;
+    }
+  
+    h1, h2 {
+      font-size: 1.5rem;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }

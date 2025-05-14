@@ -92,43 +92,14 @@ body {
 
 
 @media (max-width: 768px) {
-  .page-content {
-    padding: 1rem;
-    margin: 1rem;
+  .cta-wrapper {
+    flex-direction: column;
+    gap: 1rem;
   }
 
-  .cta-wrapper,
-  .form-group,
-  .skills-section,
-  .about-section {
-    width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  .cta-box,
-  .result-box {
+  .cta-box {
     padding: 1rem;
     font-size: 0.95rem;
-  }
-
-  h1, h2, h3 {
-    font-size: 1.5rem;
-  }
-
-  .btn,
-  .btn-project,
-  .btn-resume {
-    padding: 0.6rem 1rem;
-    font-size: 1rem;
-    width: 100%;
-    max-width: 250px;
-  }
-
-  input[type="text"],
-  input[type="number"] {
-    font-size: 1rem;
-    padding: 0.75rem;
   }
 
   .profile-img,
@@ -137,9 +108,20 @@ body {
     height: auto;
   }
 
-  .nav-links {
-    width: 90%;
-    right: 5%;
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-project,
+  .btn-resume {
+    padding: 0.6rem 1rem;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .page-content {
+    padding: 1rem;
+    margin: 1rem;
   }
 
   .footer-content {

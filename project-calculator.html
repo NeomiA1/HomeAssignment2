@@ -34,23 +34,27 @@
   <h1>Project cost calculator</h1>
   
   <form id="calculator-form"  onsubmit="calculatePrice(event)">
-    <div class="form-group">
-    <label>Project name:</label>
-    <input type="text" id="projectName" name="projectName" required/>
+    <div class="form-group">      
+     
+      <label for="siteType">Site Type:</label>
+      <select id="siteType" required>
+        <option value="" selected hidden>--Choose--</option>
+        <option value="OnlineStore">Online Store</option>
+        <option value="BusinessSite">Business Site</option>
+        <option value="Blog">Blog</option>
+      </select>
 
-    <label>Number of items:</label>
-    <input type="number" id="itemCount" required>
+      <label for="itemCount">Number of Pages (1-10):</label>
+      <input type="number" id="itemCount" required>
    
-   
-    <label>Price per item:</label>
-    <input type="number" id="pricePerItem" required>
     </div>
 
     <button type="submit" class="btn">Calculate</button>
     <button type="button" class="btn" onclick="clearForm()">Clear</button>
-
-    <div id="result" class="result-box hidden"></div>
   </form>
+ 
+  <div id="result" class="result-box hidden"></div>
+
 </main>
 
 <footer class="main-footer">
