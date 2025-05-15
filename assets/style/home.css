@@ -1,3 +1,5 @@
+@import url('variables.css');
+
 .cta-wrapper {
  display: flex;
  flex-direction: column;
@@ -97,7 +99,7 @@
 
   .cta-box {
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: var(--font-size-small);
   }
 
   .profile-img,
@@ -107,7 +109,7 @@
   }
 
   h1, h2 {
-    font-size: 1.3rem;
+    font-size: var(font-size-big);
   }
 
   .btn-project,
@@ -122,10 +124,6 @@
     margin: 1rem;
   }
 
-  .footer-content {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
 }
 
 
@@ -137,7 +135,7 @@
 
   .cta-box {
     padding: 1.2rem;
-    font-size: 0.95rem;
+    font-size: var(--font-size-small);
   }
 
   .profile-img,
@@ -147,7 +145,7 @@
   }
 
   h1, h2 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-big);
   }
 
   .btn-project,
@@ -171,7 +169,7 @@
 
   .cta-box {
     padding: 1.5rem;
-    font-size: 1rem;
+    font-size: var(--font-size-small);
   }
 
   .profile-img,

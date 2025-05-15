@@ -9,7 +9,7 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Lora', serif;
+    font-family: var(--font-family);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -39,7 +39,7 @@ body.no-scroll {
     background-color: var(--navbar-bg);
     width: 100%;
     z-index: 1000;
-    padding: 1rem;
+    padding: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +96,8 @@ body.no-scroll {
     text-align: center;
     gap: 0.5rem;
     font-weight: bold;
-    font-size: 1.25rem;
+    font: var(--font-family);
+    font-size: var(--font-size-small);
   }
 
 

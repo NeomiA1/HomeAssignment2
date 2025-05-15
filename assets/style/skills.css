@@ -4,7 +4,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  color: var(--text-color);
   }
 
   .skills-list li {
@@ -24,9 +23,9 @@
   }
 
   .page-content {
-    max-width: 75rem;
+    max-width: 30rem;
     margin: 0 auto;
-    padding: 7.5rem 1.5rem 2rem;
+    padding: 5rem 1.5rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,15 +44,15 @@
     width: 0.6rem;
     height: 0.6rem;
     background-color: var(--link-bg);
-    border-radius: 50%;
+    border-radius: 2rem;
   }
 
   .page-content section h2 {
       color: var(--text-color);
       margin-top: 2rem;
       font-size: 1.5rem;
-      border-bottom: 0.1rem solid #d6d1d1;
-      padding-bottom: 0.3rem;
+      border-bottom: 0.2rem solid #d6d1d1;
+      padding-bottom: 0.5rem;
     }
 
   .page-content section p {
@@ -73,24 +72,19 @@
   
     .skills-section h1,
     .page-content section h2 {
-      font-size: 1.3rem;
+      font-size: var(--font-size-small);
     }
   
     .skills-list li {
-      font-size: 0.95rem;
+      font-size: var(--font-size-small);
       line-height: 1.6;
     }
   
     .page-content section p {
-      font-size: 0.95rem;
+      font-size: var(--font-size-small);
       line-height: 1.5;
     }
   
-    .footer-content {
-      flex-direction: column;
-      gap: 0.5rem;
-      font-size: 1rem;
-    }
   }
 
   @media (min-width: 576px) and (max-width: 766px) {
@@ -102,17 +96,13 @@
     }
   
     .skills-list li {
-      font-size: 0.95rem;
+      font-size: var(--font-size-small);
     }
   
     h1, h2 {
-      font-size: 1.5rem;
+      font-size: var(--font-size-big);
     }
   
-    .footer-content {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
   }
 
   @media (min-width: 767px) and (max-width: 991px) {
@@ -124,15 +114,11 @@
     }
   
     .skills-list li {
-      font-size: 1rem;
+      font-size: var(--font-size-small);
     }
   
     h1, h2 {
-      font-size: 1.6rem;
+      font-size: var(--font-size-big);
     }
-  
-    .footer-content {
-      flex-direction: row;
-      gap: 1rem;
-    }
+
   }

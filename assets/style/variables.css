@@ -17,6 +17,9 @@
   --active-link-bg: #8ab2a6b2;
   --footer-bg: #F6F1DE;
   --footer-text-color: #3E3F5B;
+  --font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-small: 1.25rem;
+  --font-size-big: 1.5rem;
 }
 
 body.dark-mode {

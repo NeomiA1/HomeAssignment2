@@ -35,12 +35,6 @@
     .page-content {
       padding: 1rem;
     }
-
-    
-  .footer-content {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
 }
 
 @media (min-width: 576px) and (max-width: 766px) {
@@ -57,10 +51,6 @@
 
   .page-content {
     padding: 1.2rem;
-  }
-  .footer-content {
-    flex-direction: column;
-    gap: 0.5rem;
   }
 }
 
@@ -80,9 +70,5 @@
     padding: 1.5rem;
   }
 
-  .footer-content {
-    flex-direction: row;
-    gap: 1rem;
-  }
 }
   
