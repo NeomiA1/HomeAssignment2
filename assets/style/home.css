@@ -36,6 +36,7 @@
 .project-img {
   max-width: 150px;
   margin: 0 auto 1rem;
+  margin-top: 1.5rem;
   border-radius: 10px;
   height: 200px;
 }
@@ -180,7 +181,7 @@
   .project-img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 
   h1, h2 {
