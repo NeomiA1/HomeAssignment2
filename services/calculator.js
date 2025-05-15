@@ -37,7 +37,6 @@
       resultDiv.style.color = "black";
       resultDiv.classList.remove("hidden");
     
-      document.getElementById("calculator-form").reset();
 
 }
 

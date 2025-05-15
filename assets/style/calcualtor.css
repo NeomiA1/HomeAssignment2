@@ -18,34 +18,42 @@
     margin-bottom: 1.5rem;
 }
 
-  form {
+form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
-  }
+}
 
-  .form-group {
+.form-group {
     display: flex;
     flex-direction: column;
     gap: 7px;
-  }
+}
 
-  .form-group label {
+.form-group label {
     color: var(--text-color);
-    margin-bottom: 5px;
     font-weight: bold;
+    margin-bottom: 5px;
     text-align: left;
+    font-size: 1rem;
   }
 
-  .form-group input {
-    padding: 10px;
+  .form-group select {
+    padding: 0.75rem;
     border: 1px solid var(--input-border);
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 1rem;
+    width: 100%;
+    color: var(--result-text-color);
+    background-color: var(--input-bg);
+  }
+
+  .form-group input {
+    background-color: var(--input-bg);
     color: var(--input-text-color);
   }
 
@@ -58,6 +66,9 @@
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
   }
 
   .btn:hover {
@@ -68,12 +79,13 @@
    background-color: var(--input-bg);
    border: 1px solid #ccc;
    padding: 1.25rem;
-   margin-top: 1.85rem;
+   margin-top: 2rem;
    border-radius: 0.5rem;
    font-size: 1rem;
-   color: var(--text-color);
+   color: var(--result-text-color);
    max-width: 400px;
    line-height: 1.6;
+   width: 100%;
   }
 
   .hidden {
@@ -90,6 +102,7 @@
   font-size: 1rem;
   border-radius: 5px;
   box-sizing: border-box;
+  color: var(--input-text-color);
 }
 
 @media (max-width: 768px) {
@@ -97,7 +110,8 @@
     .page-content,
     .result-box {
       width: 90%;
-      margin: 0 auto;
+      margin-left: auto;
+      margin-right: auto;
       padding: 1rem;
     }
   
@@ -115,7 +129,10 @@
     }
   
     .result-box {
+        width: 100%;
         font-size: 0.95rem;
+        padding: 1rem;
+        margin-top: 1.5rem;
     }
     
     h1 {

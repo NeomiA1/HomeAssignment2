@@ -22,10 +22,13 @@
 }
 
 .profile-img {
+  width: 100%;
   max-width: 200px;
+  height: auto;
   border-radius: 30%;
   margin: 0 auto 1rem;
   box-shadow: 0 0 8px rgba(83, 81, 81, 0.1);
+  display: block;
 }
 
 .project-img {
@@ -102,9 +105,9 @@ body {
     font-size: 0.95rem;
   }
 
-  .profile-img,
+  .profile-img
   .project-img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
   }
 
