@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    const toggleButton = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-links");
+    const toggleButton = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-links');
 
     if (toggleButton) {
         toggleButton.addEventListener("click", () => {
