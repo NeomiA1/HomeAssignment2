@@ -16,11 +16,16 @@ body {
     overflow-x: hidden;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
+
 .menu-toggle {
     display: none;
-    position: absolute;
+    position: fixed;
     font-size: 1.75rem;
-    background: none;
+    background: var(--navbar-bg);
     border: none;
     color: var(--link-color);
     top: 1rem;
@@ -97,20 +102,20 @@ body {
 
 @media (max-width: 990px) {
     .menu-toggle {
-        display: block;
+        display: flex;
     }
 
     .nav-links {
         position: fixed;
         inset: 0;
-        background-color: rgba(246, 241, 222, 0.97);
-        display: none;
+        background-color: rgba(246, 241, 222, 0.96);        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
         z-index: 999;
         padding: 2rem;
+        height: 100vh;
     }
 
     .nav-links.show {

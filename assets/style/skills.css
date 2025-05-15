@@ -1,36 +1,60 @@
-  .skills-list {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    color: var(--text-color);
-    text-align: left;
+@import url('variables.css');
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
   }
 
   .skills-list li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
   }
 
   .skills-section h1 {
+    font-size: 1.8rem;
+    font-family: 'Lora', serif;
     color: var(--text-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 0.2rem solid #d6d1d1;
+    padding-bottom: 0.5rem;
   }
 
   .page-content {
-    max-width: 500px;
-    margin: 2rem auto;
-    padding: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 7.5rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
     background-color: var(--content-bg);
-    border-radius: 10px;
+    border-radius: 0.75rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
     color: var(--text-color);
   }
 
-  .page-content section h2 {
-    color: var(--text-color);
-    margin-top: 2rem;
-    font-size: 1.5rem;
+  .skills-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: var(--link-bg);
+    border-radius: 50%;
   }
+
+  .page-content section h2 {
+      color: var(--text-color);
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      border-bottom: 0.1rem solid #d6d1d1;
+      padding-bottom: 0.3rem;
+    }
 
   .page-content section p {
     color: var(--text-color);
@@ -41,24 +65,31 @@
   }
 
   @media (max-width: 575px) {
-    .page-content,
-    .skills-section {
-      width: 90%;
-      margin: 1rem auto;
-      padding: 1rem;
+    .page-content {
+      width: 92%;
+      padding: 1.2rem;
+      font-size: 0.95rem;
+    }
+  
+    .skills-section h1,
+    .page-content section h2 {
+      font-size: 1.3rem;
     }
   
     .skills-list li {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
   
-    h1, h2 {
-      font-size: 1.3rem;
+    .page-content section p {
+      font-size: 0.95rem;
+      line-height: 1.5;
     }
   
     .footer-content {
       flex-direction: column;
       gap: 0.5rem;
+      font-size: 1rem;
     }
   }
 

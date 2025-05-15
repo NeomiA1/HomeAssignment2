@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (toggleButton) {
         toggleButton.addEventListener("click", () => {
             navMenu.classList.toggle("show");
+            document.body.classList.toggle("no-scroll");
         });
     }
 });
