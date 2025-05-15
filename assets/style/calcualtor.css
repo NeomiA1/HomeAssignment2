@@ -106,6 +106,25 @@ form {
   color: var(--input-text-color);
 }
 
+.custom-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    cursor: pointer;
+    margin-top: rem;
+    user-select: none;
+}
+  
+.custom-checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--btn-bg);
+    cursor: pointer;
+}
+
 @media (max-width: 575px) {
     .page-content,
     .form-group,
@@ -133,6 +152,15 @@ form {
     form {
       flex-direction: column;
       align-items: stretch;
+    }
+
+    .custom-checkbox-label {
+        font-size: 0.95rem;
+      }
+    
+      .custom-checkbox-label input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
     }
   
     .footer-content {
