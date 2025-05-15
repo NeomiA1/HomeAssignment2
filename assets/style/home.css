@@ -106,15 +106,17 @@
   .project-img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 1.25rem;
   }
 
   h1, h2 {
     font-size: var(font-size-big);
+    margin-bottom: 1.25rem;
   }
 
   .btn-project,
   .btn-resume {
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 0.5rem;
     width: 100%;
     max-width: 250px;
   }
@@ -140,12 +142,14 @@
 
   .profile-img,
   .project-img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
+    margin-bottom: 1.25rem;
   }
 
   h1, h2 {
-    font-size: var(--font-size-big);
+    font-size: var(font-size-big);
+    margin-bottom: 1.25rem;
   }
 
   .btn-project,
@@ -174,8 +178,14 @@
 
   .profile-img,
   .project-img {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  h1, h2 {
+    font-size: var(font-size-big);
+    margin-bottom: 1.25rem;
   }
 
   .columns-divider {

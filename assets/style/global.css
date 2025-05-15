@@ -23,7 +23,7 @@ body.no-scroll {
 
 .menu-toggle {
     display: none;
-    position: fixed;
+    position: absolute;
     font-size: 1.75rem;
     background: var(--navbar-bg);
     border: none;
@@ -38,7 +38,7 @@ body.no-scroll {
 .navbar {
     background-color: var(--navbar-bg);
     width: 100%;
-    z-index: 1000;
+    z-index: 1001;
     padding: 1.2rem;
     display: flex;
     justify-content: center;
